@@ -2,6 +2,7 @@ import React from 'react';
 import Petlist from '../components/Petlist';
 import Searchbox from '../components/Searchbox';
 import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/ErrorBoundry';
 import './App.css';
 
 class App extends React.Component{
@@ -32,7 +33,9 @@ class App extends React.Component{
                 <h1 className= 'f1'>Pet Adoption</h1>
                 <Searchbox searchChange ={this.onSearchChange}/>
                 <Scroll>
-                    <Petlist pets={filteredPets}/>
+                    <ErrorBoundry>
+                        <Petlist pets={filteredPets}/>
+                    </ErrorBoundry>
                 </Scroll>
             </div>
         );
