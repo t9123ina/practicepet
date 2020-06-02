@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@font-face {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 100em;
+    font-weight: 1000;
+    src: url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap')
+  }
+
+h1 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 100em;
+    color: rgb(131, 27, 228);
+}
